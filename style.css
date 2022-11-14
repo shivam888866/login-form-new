@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1dd1a1;
+}
+.Login
+{
+    position: relative;
+    padding: 50px;
+    background: #fff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow:  0 25px 50px rgba(red, green, blue, alpha) ;
+}
+.Login h2
+{
+    font-weight: 500;
+    border-left: 15px solid #1dd1a1;
+    line-height: 1em;
+    padding: 10px;
+    transition: 0.5;
+    color: blueviolet;
+}
+.Login .inputbox
+{
+    position: relative;
+}
+.Login .inputbox input
+{
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: 2px solid #333;
+    font-size: 1em;
+    color: #333;
+}
+.Login .inputbox input#btn
+{
+    border: none;
+    background: seagreen;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Login .group
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Login .group a
+{
+    color: black;
+    text-decoration: none;
+
+}
+.Login .group a:nth-child(2)
+{
+    font-weight: 500;
+    text-decoration: underline;
+
+}
+.colors
+{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.colors span
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--clr);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.colors span.active
+{
+    border: 2px solid #333;
+    scale: 1.5;
+    transition: 0.5s;
+
+}
